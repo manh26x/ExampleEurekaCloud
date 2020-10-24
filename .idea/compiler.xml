@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="load-balanced" />
+        <module name="eureka-client" />
+        <module name="eureka-server" />
+        <module name="statistic-history" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="eureka-client" target="1.8" />
+      <module name="eureka-server" target="1.8" />
+      <module name="ExampleEurekaCloud" target="1.5" />
+      <module name="load-balanced" target="1.8" />
+      <module name="statistic-history" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="eureka-client" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
+      <module name="load-balanced" options="-parameters" />
+      <module name="statistic-history" options="-parameters" />
+    </option>
+  </component>
+</project>

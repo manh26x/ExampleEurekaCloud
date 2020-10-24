@@ -1,0 +1,20 @@
+# Items that apply to ALL profiles:
+eureka:
+  instance:
+    appname: ABC-SERVICE  # ==> This is a instance of ABC-SERVICE
+  client:
+    fetchRegistry: true
+    serviceUrl:
+      #      defaultZone: http://my-eureka-server.com:9000/eureka
+      defaultZone: http://my-eureka-server-us.com:9000/eureka
+#      defaultZone: http://my-eureka-server-fr.com:9002/eureka
+#      defaultZone: http://my-eureka-server-vn.com:9003/eureka
+
+server:
+  port: 11112
+ping-server:
+  ribbon:
+    eureka:
+      enabled: false # Disable Default Ping
+    listOfServers: localhost:8080,localhost:8001,localhost:8002,,localhost:8003
+    ServerListRefreshInterval: 15000
